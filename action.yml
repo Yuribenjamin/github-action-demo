@@ -1,0 +1,7 @@
+name: "Hello World"
+description: "test github Actions"
+author: "Ibrahim Ragab <ibrahim@wuilt.com>"
+
+runs:
+  using: "node12"
+  main: "index.js"

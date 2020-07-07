@@ -1,0 +1,19 @@
+{
+  "name": "github-action-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Yuribenjamin/github-action-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yuribenjamin/github-action-demo/issues"
+  },
+  "homepage": "https://github.com/Yuribenjamin/github-action-demo#readme"
+}
