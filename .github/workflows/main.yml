@@ -5,7 +5,11 @@ on: [push, pull_request]
 jobs:
   hello-world:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v2
-    - uses: ./
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          character: bender
+        id: futurama
+      - run: echo ${{steps.futurama.outputs.quote}}

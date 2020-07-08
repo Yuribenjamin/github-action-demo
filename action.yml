@@ -2,6 +2,15 @@ name: "Hello World"
 description: "test github Actions"
 author: "Ibrahim Ragab <ibrahim@wuilt.com>"
 
+inputs:
+  character:
+    description: "Test first character"
+    default: "dr-zoidberg"
+
+outputs:
+  quote:
+    description: "Test first quote"
+
 runs:
   using: "node12"
   main: "dist/index.js"
