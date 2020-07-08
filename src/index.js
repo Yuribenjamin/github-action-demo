@@ -3,9 +3,15 @@ const core = require("@actions/core");
 
 const DEFAULT_CHARACTER = "dr-zoidberg";
 
+const availableCharacters = ["bender", "fry", "leela", "dr-zoidberg"];
+
 async function run() {
   const character = core.getInput("character") || DEFAULT_CHARACTER;
-  console.log(character);
+
+  if (!availableCharacters.includes(character)) {
+    core.setFailed(`Unkown character : ${character}`);
+    return;
+  }
 
   const response = await axios.get(
     `http://futuramaapi.herokuapp.com/api/characters/${character}/1`
